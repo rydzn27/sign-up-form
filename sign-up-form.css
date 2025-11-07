@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+
+}
+
+#logo {
+    background-image: url(./img/asgard.webp);
+    object-fit: cover;
+    flex: 0 0 40%;
+}
+
+.form-wrapper {
+    flex: 0 0 60%;
+}
+
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    width: 50%;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.error {
+    border-color: red;
+    background-color: #ffe5e5;
+}
+
