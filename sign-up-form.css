@@ -6,29 +6,65 @@
 
 body {
     display: flex;
+    height: 100vh;
+    font-family: "Cormorant Garamond", serif;
+    background-color: #050C26; /* Black Pearl */
+    color: white;
+}
 
+h2, h3, .form-heading {
+    font-family: "Cinzel", serif;
+    letter-spacing: 1px;
 }
 
 #logo {
-    background-image: url(./img/asgard.webp);
-    object-fit: cover;
+    background-image: url(./img/mir4-bg1.jpg);
     flex: 0 0 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    margin-bottom: 1rem;
 }
 
 .form-wrapper {
     flex: 0 0 60%;
-    background: #f9fafb;
-    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255,255,255,0.05);
+    padding: 2.5rem;
+    backdrop-filter: blur(4px);
+    border-left: 1px solid rgba(167,229,240,0.25);
 }
 
 .form-fields {
     display: flex;
     flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(167,229,240,0.25);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-heading {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .form-row {
     width: 50%;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -43,9 +79,10 @@ body {
 
 .form-row label {
     margin-bottom: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #a7e5f0;
 }
 
 .error-message {
@@ -56,21 +93,69 @@ body {
 }
 
 input {
-    padding: 0.5rem;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 0.6rem;
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid #a7e5f0;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.85em;
     width: 100%;
     box-sizing: border-box;
 }
 
 input:focus {
     outline: none;
-    border-color: #666;
+    border-color: #a7e5f0;
+    box-shadow: 0 0 8px #A7E5F0;
+}
+
+#submit-button {
+    background: #D70000;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 12px rgba(215, 0, 0, 0.55);
+}
+
+#submit-button:hover {
+    background: #D70000;
+    box-shadow:
+        0 0 18px rgba(215, 0, 0, 0.9),
+        0 0 34px rgba(215, 0, 0, 0.55);
+    transform: translateY(-2px);
+}
+
+.account-login {
+    margin-top: 1.5rem;
+}
+
+.log-in {
+    font-size: 1rem;
+    color: #C7D4E2;
+}
+
+.log-in a {
+    color: #A7E5F0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.log-in a:hover {
+    text-decoration: underline;
 }
 
 .error {
-    border-color: red;
-    background-color: #ffe5e5;
+    border-color: #D70000;
+    background-color: rgba(215, 0, 0, 0.1);
+    color: #D70000;
+    box-shadow: 0 0 6px rgba(215, 0, 0, 0.5); 
+}
+
+input.error {
+    color: #D70000;
 }
 

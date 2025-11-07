@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-up-form.css">
     <script src="sign-up-form.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+
     <title>Sign-up Form</title>
 </head>
 <body>
     <div id="logo">
-        <img src="./img/odin-logo.png" alt="logo" width="300">
+        <img src="./img/mir4-logo.avif" alt="logo" width="500">
     </div>
 
     <div class="form-wrapper">
         <header>
-            <h2>This is not a real online service! You know you need something like this in your life to
-                help you realize your deepest dreams. Sign up <em>now</em> to get started.
-            </h2>
-            <h2>You <em>know</em> you want to.</h2>
+            <h2>Begin your journey to power and glory. In MIR4, your path is yours to forge — whether you choose honor, ambition, or destiny.</h2>
+            <h2>Sign up and step into the world of warriors.</h2>
         </header>
         <form action="">
-            <h3>Let's do this!</h3>
             <div class="form-fields">
+                <h3 class="form-heading">Join the Brotherhood.</h3>
+
                 <div class="form-row">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" id="first-name" name="first-name" />
@@ -46,13 +48,13 @@
                     <label for="confirm-password">CONFIRM PASSWORD</label>
                     <input type="password" id="confirm-password" name="confirm-password">
                     <span class="error-message"></span>
-            </div>
+                </div>
             </div>
             <div class="submit-button">
-                <button type="submit">Create Account</button>
+                <button type="submit" id="submit-button">Create Account</button>
             </div>
-            <div>
-                <p>Already have an account? <a href="">Log in</a></p>
+            <div class="account-login">
+                <p class="log-in">Already have an account? <a href="">Log in</a></p>
             </div>
         </form>
     </div>
