@@ -17,6 +17,8 @@ body {
 
 .form-wrapper {
     flex: 0 0 60%;
+    background: #f9fafb;
+    padding: 2rem 3rem;
 }
 
 .form-fields {
@@ -28,6 +30,29 @@ body {
     width: 50%;
     padding-right: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+/* Make each input field take equal width */
+.form-row input {
+    margin-bottom: 4px;
+}
+
+.form-row label {
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.error-message {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9em;
+    color: red;
 }
 
 input {
@@ -35,6 +60,8 @@ input {
     border: 1px solid lightgray;
     border-radius: 5px;
     font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus {
